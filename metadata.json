@@ -1,0 +1,7 @@
+{
+  "name": "EduPulse - School Parent Portal & AI Copilot",
+  "description": "Comprehensive school parent portal with daily grades, attendance, teacher messaging, real-time push alerts, cloud sync, analytics, and Gemini AI insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

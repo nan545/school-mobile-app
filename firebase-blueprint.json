@@ -1,0 +1,123 @@
+{
+  "entities": {
+    "UserProfile": {
+      "collection": "users",
+      "fields": {
+        "uid": "string",
+        "email": "string",
+        "displayName": "string",
+        "role": "string",
+        "photoURL": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "Student": {
+      "collection": "students",
+      "fields": {
+        "id": "string",
+        "name": "string",
+        "grade": "string",
+        "studentId": "string",
+        "guardianId": "string",
+        "currentGpa": "number",
+        "unweightedGpa": "number",
+        "attendanceRate": "number",
+        "schoolName": "string",
+        "homeroom": "string",
+        "homeroomTeacher": "string",
+        "avatar": "string"
+      }
+    },
+    "SubjectGrade": {
+      "collection": "grades",
+      "fields": {
+        "id": "string",
+        "studentId": "string",
+        "name": "string",
+        "code": "string",
+        "teacherName": "string",
+        "teacherAvatar": "string",
+        "currentPercentage": "number",
+        "letterGrade": "string",
+        "period": "number",
+        "room": "string",
+        "trend": "string",
+        "assignments": "array",
+        "categoryWeights": "map",
+        "quarterHistory": "map"
+      }
+    },
+    "AttendanceRecord": {
+      "collection": "attendance",
+      "fields": {
+        "id": "string",
+        "studentId": "string",
+        "date": "string",
+        "status": "string",
+        "checkInTime": "string",
+        "note": "string",
+        "periods": "array"
+      }
+    },
+    "SchoolEvent": {
+      "collection": "events",
+      "fields": {
+        "id": "string",
+        "title": "string",
+        "category": "string",
+        "date": "string",
+        "startTime": "string",
+        "endTime": "string",
+        "location": "string",
+        "description": "string",
+        "attendeeCount": "number",
+        "rsvps": "map"
+      }
+    },
+    "ChatMessage": {
+      "collection": "messages",
+      "fields": {
+        "id": "string",
+        "studentId": "string",
+        "channelId": "string",
+        "senderId": "string",
+        "senderName": "string",
+        "senderRole": "string",
+        "senderAvatar": "string",
+        "text": "string",
+        "timestamp": "string",
+        "createdAt": "timestamp",
+        "status": "string",
+        "attachment": "map"
+      }
+    },
+    "AbsenceExcuse": {
+      "collection": "excuses",
+      "fields": {
+        "id": "string",
+        "studentId": "string",
+        "date": "string",
+        "reason": "string",
+        "note": "string",
+        "documentName": "string",
+        "status": "string",
+        "submittedAt": "string",
+        "guardianName": "string"
+      }
+    },
+    "NotificationItem": {
+      "collection": "notifications",
+      "fields": {
+        "id": "string",
+        "studentId": "string",
+        "title": "string",
+        "body": "string",
+        "timestamp": "string",
+        "createdAt": "timestamp",
+        "read": "boolean",
+        "category": "string",
+        "actionTab": "string"
+      }
+    }
+  }
+}
